@@ -2,11 +2,26 @@
   "name": "natours",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "app": "./public/build/boudle.js",
+  "browserslist": "> 0.25%",
+  "engines": {
+    "browsers": "> 0.25%"
+  },
+  "targets": {
+    "app": {
+      "context": "browser",
+      "engines": {
+        "browsers": "> 0.25%"
+      },
+      "isLibrary": false
+    }
+  },
   "scripts": {
     "start": "nodemon server.js",
     "start:prod": "NODE_ENV=production nodemon server.js",
-    "debug": "ndb server.js"
+    "debug": "ndb server.js",
+    "watch:js": "parcel watch ./public/js/index.js",
+    "build:js": "parcel watch ./public/js/index.js"
   },
   "keywords": [],
   "author": "",

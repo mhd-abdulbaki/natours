@@ -1,11 +1,11 @@
-const Review = require('../models/reviewModel');
+const Review = require("../models/reviewModel");
 const {
   deleteOne,
   updateOne,
   createOne,
   getOne,
-  getAll
-} = require('./handlerFactory');
+  getAll,
+} = require("./handlerFactory");
 
 const setTourUserIds = (req, res, next) => {
   //Allow nested routes
@@ -26,5 +26,5 @@ module.exports = {
   createReview,
   updateReview,
   deleteReview,
-  setTourUserIds
+  setTourUserIds,
 };
